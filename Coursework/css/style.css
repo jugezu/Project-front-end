@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    
+    margin: 0;
+    padding: 0;
+}
+
+/* custom colors */
+:root {
+    --sky-blue: #9fcafc;
+    --dark-blue: #0a4f9e;
+    --base-blue : #5375d3;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #9fcafc; /* light blue close to sky blue */
+
+}
+a{
+    text-decoration: none;
+    color: #000000; /* black*/   
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+
+}
+
+/* Navbar */
+.navbar {
+    background: #fff;
+    padding: 20px;
+}
+
+.navbar .container {
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .main-menu ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover{
+    color: var(--sky-blue); /* sky blue */
+}
+
+/* utility classes*/
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
