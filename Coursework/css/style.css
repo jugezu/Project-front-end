@@ -7,9 +7,14 @@
 
 /* custom colors */
 :root {
-    --sky-blue: #9fcafc;
+    --sky-blue: #9fcafc; /*primary color*/
     --dark-blue: #0a4f9e;
     --base-blue : #5375d3;
+    --super-dark-blue: #243e5f; /* this is good*/ 
+    --black :#000000;
+    --white :#fff;
+    --light :#aed2fa;
+    
 }
 
 body{
@@ -61,6 +66,63 @@ img{
     color: var(--sky-blue); /* sky blue */
 }
 
+/* add margin between buttons */
+.navbar ul li:last-child a {
+    margin-left: 10px;
+}
+
+.navbar ul li a i{
+    margin-right: 10px;
+}
+
+
+/* Hero */
+.hero {
+    margin-bottom: 50px;
+}
+
+.hero .container {
+    background: url('../images/hero-bg.png') no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    height: 550px;
+}
+
+.hero .hero-content{
+    width: 70%;
+}
+
+.hero .hero-text {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+/* Video */
+
+.video {
+    padding: 10px 0 40px;
+}
+
+.video-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-preview{
+    margin-bottom: 20px;
+}
+
+/* Testimonials*/
+.testimonials{
+    padding: 40px 0;
+}
+
+.testimonials .testimonials-heading{
+    width: 700px;
+    margin-bottom: 40px;
+}
+
 /* utility classes*/
 .container {
     max-width: 1100px;
@@ -74,4 +136,107 @@ img{
     margin: 0 auto;
     padding: 0 15px;
     
+}
+
+/* here are the buttons */
+.btn{
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--dark-blue); 
+    color: var(black);
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius:  10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn-primary{
+    background: var(--sky-blue);
+    color: var(--white);
+}
+
+.btn-dark{
+    background: var(--base-blue);
+    color: var(--white);
+}
+/* own exta  btn-super-dark*/
+.btn-super-dark{
+    background: var(--super-dark-blue);
+    color: var(--white);
+}
+/*  end */
+.btn-block{
+    display: block;
+    width: 100%;
+}
+
+/* Text Classes */
+.text-xxl {
+    font-size: 3rem;  /* 1 rem = 16px */
+    line-height:1.2;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+
+.text-xl {
+    font-size: 2.2rem;  
+    line-height:1.4;
+    font-weight: normal;
+    margin: 40px 0 20px;
+}
+
+.text-lg {
+    font-size: 1.8rem;  
+    line-height:1.4;
+    font-weight: normal;
+    margin: 30px 0 20px;
+}
+
+.text-md {
+    font-size: 1.2rem;  
+    line-height:1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+
+.text-sm {
+    font-size: 0.9rem;  
+    line-height:1.4;
+    font-weight: normal;
+    margin: 10px 0 5px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* Background */
+.bg-primary {
+    background: var(--sky-blue);
+    color: var(--white);
+}
+
+.bg-light {
+    background: var(--light);
+    color: #333;
+}
+
+.bg-dark {
+    background: var(--dark-blue);
+    color: #fff;
+}
+.bg-super-dark-blue {
+    background: var(--super-dark-blue);
+    color: #fff;
+}
+
+.bg-black {
+    background: var(--black);
+    color: #fff;
 }
