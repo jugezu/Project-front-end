@@ -15,6 +15,139 @@ body{
     font-family:'Poppins',sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background-color: coral;
-    overflow-x: hidden; /* remove horizontal scroll wheel*/ 
+    /*background: linear-gradient(90deg, coral, rgb(255, 255, 255)); */
+    background-color: #ff7f50; /* coral  #ff7f50*/
+    overflow-x: hidden; /* removes horizontal scroll wheel*/ 
+}
+
+a{
+    text-decoration: none;
+    color: #000000;   
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    margin-right: 10px;
+    position: relative;
+    top: -5px;
+}
+
+/* Navbar */
+.navbar {
+    background:var(--white);
+    padding: 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar .main-menu ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover{
+    color: var(--black);
+}
+
+.navbar ul li a {
+    margin-left: 10px;
+}
+
+.navbar ul li a i{
+    margin-right: 10px;
+}
+
+.icon-name{
+    color: coral;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: #000;
+}
+
+/* utility classes:  Set all stuff center of the screen*/
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+
+
+
+/* Buttons */
+.btn{
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--dark-blue); 
+    color: var(black);
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius:  10px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn-white{
+    background: var(--white);
+    color: var(--black);
+}
+
+.btn-coral{
+    background: coral;
+    color: #fff;
+}
+
+
+/* Text Classes */
+.text-xxl {
+    font-size: 3rem;  /* 1 rem = 16px */
+    line-height:2rem;
+    font-weight: 600;
+    margin: 40px 0 20px;
+    color: coral;
+}
+
+.text-xl {
+    font-size: 2.2rem;  
+    line-height:1.4;
+    font-weight: normal;
+    margin: 40px 0 20px;
 }
