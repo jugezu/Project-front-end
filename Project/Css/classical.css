@@ -15,7 +15,6 @@ body{
     font-family:'Poppins',sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    /*background: linear-gradient(90deg, coral, rgb(255, 255, 255)); */
     background-color: #ff7f50; /* coral  #ff7f50*/
     overflow-x: hidden; /* removes horizontal scroll wheel*/ 
 }
@@ -95,6 +94,43 @@ img{
 }
 
 
+/* Classical player cards */
+
+.classical .classical-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.classical ul {
+    margin: 15px 0;
+}
+
+.classical-card-heading{ 
+    color: var(--black)!important;  /* default is white */
+    
+}
+.classical ul li {
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.classical-card-body ul li i {
+    margin-right: 10px;
+}
+
+
+.classical-card-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
 /* Footer*/
 
 .footer{
@@ -103,19 +139,18 @@ img{
 }
 
 
-/* utility classes:  Set all stuff center of the screen*/
+
+/* utility classes:  Set all the stuff center of the screen*/
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 15px;
-
 }
 
 .container-sm {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 15px;
-    
 }
 
 
@@ -124,8 +159,7 @@ img{
 .btn{
     display: inline-block;
     padding: 13px 20px;
-    /*background: var(--white); */ 
-    /*color: var(black);*/
+    /*background: var(--white); */
     font-weight: 600;
     text-decoration: none;
     border: none;
@@ -139,6 +173,12 @@ img{
     opacity: 0.8;
 }
 
+.btn-pushed:hover {
+    background: coral;
+    color: var(--white)!important; /* this overrides earlier styles*/
+    opacity: 1;  /* text from black to white*/
+}
+
 .btn-white{
     background: var(--white);
     color: var(--black);
@@ -149,9 +189,11 @@ img{
     color: #fff;
 }
 
-.btn-brown {
-    background:#84523f;
-    color:#000;
+.btn-pushed {
+    background:coral;
+    
+    color:var(--black);
+    transition: color 0.5s ease-in-out;
 }
 
 
@@ -170,6 +212,14 @@ img{
     font-weight: normal;
     margin: 40px 0 20px;
     color: var(--white);
+}
+
+.text-ranks{
+    font-size: 2.2rem;
+    line-height:1.5;
+    font-weight: 500;
+    margin: 10px 10px 10px;
+    color: var(--black);
 }
 
 /* Backgrounds */
