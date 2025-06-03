@@ -93,6 +93,10 @@ img{
     margin-bottom: 50px;
 }
 
+.hero-content .hero-heading {
+    text-align: center;
+}
+
 
 /* Classical player cards */
 
@@ -129,6 +133,9 @@ img{
     margin-right: 10px;
 }
 
+.classical-grid img {
+    object-fit:cover;
+}
 
 
 /* Footer*/
@@ -191,7 +198,6 @@ img{
 
 .btn-pushed {
     background:coral;
-    
     color:var(--black);
     transition: color 0.5s ease-in-out;
 }
@@ -220,6 +226,11 @@ img{
     font-weight: 500;
     margin: 10px 10px 10px;
     color: var(--black);
+}
+
+.text-sm{
+    font-size: 1rem;
+    font-weight:500;   
 }
 
 /* Backgrounds */
