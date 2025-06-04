@@ -108,8 +108,43 @@ img{
 }
 
 .footer-grid {
-    display: flex;
-    justify-content: space-between;
+    display: flex; 
+    margin-right:5px ;
+}
+
+.about-us-group-body {
+    margin-top: 10px;
+    flex:1;
+    max-width: 550px;
+    font-style: italic;
+
+}
+
+.about-us-group-body {
+    display: none;
+    position: relative;
+    
+}
+
+.about-us-group-body.open {
+    display: block;
+}
+
+.about-us-group-header{
+    cursor: pointer;
+}
+
+.image-rights{
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.footer ul{
+    margin-left: 90px;
+}
+
+.update-text{
+    margin-top: 10px;
 }
 
 
@@ -190,6 +225,7 @@ img{
     margin: 40px 0 20px;
     color: var(--white);
 }
+
 
 /* Backgrounds */
 
