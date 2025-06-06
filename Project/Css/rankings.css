@@ -98,7 +98,8 @@ img{
 }
 
 
-/* Classical player cards */
+/* Classical player cards  and others */
+
 
 .classical .classical-grid{
     display: grid;
@@ -106,6 +107,7 @@ img{
     gap: 30px;
     margin-top: 50px;
 }
+
 
 .classical ul {
     margin: 15px 0;
@@ -122,6 +124,11 @@ img{
 
 .classical-card-body ul li i {
     margin-right: 10px;
+    
+}
+ .classical-card-body, .crown {
+    font-size: 1rem;
+    
 }
 
 
@@ -133,8 +140,41 @@ img{
     margin-right: 10px;
 }
 
+.classical-card-header-info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+
 .classical-grid img {
     object-fit:cover;
+}
+
+
+.crown{
+
+    font-size: 2.2rem;
+    line-height:1.5;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.crown-text {
+    display: none;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.crown-text.open {
+    display: block;
+}
+
+.extra-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
 }
 
 
@@ -143,6 +183,46 @@ img{
 .footer{
     padding: 40px 0;
     margin-top: 50px;
+}
+
+.footer-grid {
+    display: flex; 
+    margin-right:5px ;
+}
+
+.about-us-group-body {
+    margin-top: 10px;
+    flex:1;
+    max-width: 550px;
+    font-style: italic;
+
+}
+
+.about-us-group-body {
+    display: none;
+    position: relative;
+    
+}
+
+.about-us-group-body.open {
+    display: block;
+}
+
+.about-us-group-header{
+    cursor: pointer;
+}
+
+.image-rights{
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.footer ul{
+    margin-left: 90px;
+}
+
+.update-text{
+    margin-top: 10px;
 }
 
 
@@ -203,6 +283,19 @@ img{
 }
 
 
+.fa-bounce{
+    --fa-animation-duration: 2s;
+    --fa-bounce-rebound:none ;
+    
+}
+
+.crown-header{
+    display: flex;
+    cursor: pointer;
+}
+    
+
+
 /* Text Classes */
 .text-xxl {
     font-size: 3rem;  /* 1 rem = 16px */
@@ -220,6 +313,14 @@ img{
     color: var(--white);
 }
 
+.crown-text .text-ranks{
+    font-size: 2.2rem;
+    line-height:1.5;
+    font-weight: 500;
+    margin: 10px 10px 10px;
+    color: var(--black);
+}
+
 .text-ranks{
     font-size: 2.2rem;
     line-height:1.5;
@@ -228,10 +329,41 @@ img{
     color: var(--black);
 }
 
+.text-ranks-info{
+    align-items: center;
+    font-size: 2.2rem;
+    line-height:1.5;
+    font-weight: 500;
+    margin: 10px 10px 10px;
+    color: var(--black);
+    
+}
+
 .text-sm{
     font-size: 1rem;
     font-weight:500;   
 }
+
+.text-smR{
+    margin-top: 25px;
+    font-size: 1rem;
+    font-weight:500;   
+}
+
+.text-info{
+    padding-top: 20px;
+    font-size: 1rem;
+    margin: 10px 10px 10px;
+    line-height: 1.7;
+    
+}
+
+
+.current-rating{
+    font-size:1rem;
+
+}
+
 
 /* Backgrounds */
 
