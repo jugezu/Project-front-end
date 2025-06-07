@@ -144,6 +144,7 @@ img{
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-top: 20px;
     
 }
 
@@ -192,6 +193,7 @@ img{
 
 .about-us-group-body {
     margin-top: 10px;
+    margin-bottom: 10px;
     flex:1;
     max-width: 550px;
     font-style: italic;
@@ -210,11 +212,13 @@ img{
 
 .about-us-group-header{
     cursor: pointer;
+    color: var(--black);
 }
 
 .image-rights{
     cursor: pointer;
     margin-top: 10px;
+    color: var(--black);
 }
 
 .footer ul{
@@ -254,6 +258,17 @@ img{
     cursor: pointer;
     text-align: center;
     transition: 0.5s;
+}
+
+.image-rights h4 u,
+.about-us-group-header h4 {
+    transition: color 0.2s ease-in-out;
+
+}
+
+.image-rights h4 u:hover,.about-us-group-header h4:hover{
+    color: coral; 
+    opacity: 1; 
 }
 
 .btn:hover{
@@ -372,16 +387,114 @@ img{
     color: #333;
 }
 
-.bg-brown {
-    background: #84523f;
-    color: #fff;
-}
-.bg-red {
-    background: #f12536;
-    color: #fff;
-}
-
 .bg-black {
     background: var(--black);
     color: #fff;
+}
+
+/* hamburger button */
+
+.hamburger-button{
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+
+}
+
+.hamburger-button .hamburger-line {
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin: 6px 0;
+}
+
+/* mobile menu */
+
+
+.mobile-menu{
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 150px;
+    z-index: 100;
+    background-color: var(--white);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+    right: 0;
+
+}
+
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    padding-right: 10px;
+    align-items: center;
+
+}
+
+.mobile-menu ul li{
+    margin: 10px 0;
+}
+
+.mobile-menu ul li a{
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.mobile-menu .btn {
+    font-size: 14px; /* Pienempi teksti */
+    padding: 8px 12px; /* Vähennä sisäistä tilaa */
+}
+.mobile-menu .btn i {
+    font-size: 12px;
+}
+.mobile-menu .btn {
+    width: auto; /* Ei täysi leveys */
+    min-width: 100px; /* Voit säätää */
+}
+
+
+/* Media Queries*/
+
+
+@media (max-width:545px){
+     .navbar .main-menu{
+    display: none;
+   }
+    .navbar .hamburger-button{
+    display: block;
+   }
+    
+/* stack grids on smaller screens*/
+    .classical .classical-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .extra-grid{
+        grid-template-columns: 1fr;
+    }
+
+    
+    .text-xxl {
+        font-size: 2rem;
+    }
+
+    .text-ranks-info{
+        font-size: 1.5rem;
+    }
+
+    .classical-card-body-info{
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+
+
 }
