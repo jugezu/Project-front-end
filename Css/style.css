@@ -1,0 +1,520 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* custom colors */
+:root {
+    --white: #faeded;
+    --black: #000;
+    
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    /*background: linear-gradient(90deg, coral, rgb(255, 255, 255)); */
+    background-color: #ff7f50; /* coral  #ff7f50*/
+    overflow-x: hidden; /* removes horizontal scroll wheel*/ 
+}
+
+a{
+    text-decoration: none;
+    color: #000000;   
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    margin-right: 10px;
+    position: relative;
+    top: -5px;
+}
+
+/* Navbar */
+.navbar {
+    background:var(--white);
+    padding: 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar .main-menu ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover{
+    color: var(--black);
+}
+
+.navbar ul li a {
+    margin-left: 10px;
+}
+
+.navbar ul li a i{
+    margin-right: 10px;
+}
+
+.icon-name{
+    color: coral;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: #000;
+}
+
+/* Hero */
+.hero {
+    margin-bottom: 50px;
+}
+
+.text3{
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.hero-content h1{
+margin-bottom: 40px;
+}
+
+/* Footer*/
+
+.footer{
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.footer-grid {
+    display: flex; 
+    margin-right:5px ;
+}
+
+.about-us-group-body {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex:1;
+    max-width: 550px;
+    font-style: italic;
+}
+
+.about-us-group-body {
+    display: none;
+    position: relative;
+}
+
+.about-us-group-body.open {
+    display: block;
+}
+
+.about-us-group-header{
+    cursor: pointer;
+}
+
+.image-rights{
+    margin-top: 10px;
+    color: var(--black);
+}
+
+.image-rights-pushed{
+    margin-top: 10px;
+    color: var(--black);
+}
+
+.footer ul{
+    margin-left: 90px;
+}
+
+.update-text{
+    margin-top: 10px;
+}
+
+
+/* utility classes:  Set all stuff center of the screen*/
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+/* Buttons */
+.btn{
+    display: inline-block;
+    padding: 13px 20px;
+    /*background: var(--white); */ 
+    /*color: var(black);*/
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius:  10px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+}
+
+/*  ----------image.html CSS----------- */
+.subheading h3{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: var(--black);
+}
+
+.image-list ul li{
+    margin-top: 20px;
+
+}
+
+.image-list ul li a{
+    margin-top: 20px;
+    color:#faeded;
+    
+}
+
+.subheading2{
+    position: relative;
+    color: black;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 40px;
+}
+
+
+
+
+.download-link a{
+    color: #faeded;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+
+.download-link a{
+    transition: color 0.2s ease-in-out;
+    color:#faeded!important;
+    font-weight: 500;
+
+}
+.download-link a:hover{
+    opacity: 1;
+    color: black !important;
+}
+
+.image-link{
+    transition: color 0.2s ease-in-out;
+    color:#faeded!important;
+    font-weight: 500;
+}
+
+.image-link:hover{
+    opacity: 1;
+    color: black !important;
+}
+
+.cc-link i{
+    transition: color 0.2s ease-in-out;
+    color:black!important;
+    font-weight: 500;
+}
+
+.cc-link:hover i{
+    opacity: 1;
+    color: #faeded !important;
+}
+
+
+.cc-link {
+    transition: color 0.2s ease-in-out;
+    color:black!important;
+    font-weight: 500;
+}
+
+.cc-link:hover {
+    opacity: 1;
+    color: #faeded !important;
+}
+
+
+.move-rook{
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    padding: 1px;
+    animation: rook 5s cubic-bezier(0.4, 0, 1, 1) infinite,color 5s steps(1) infinite;
+
+}
+@keyframes rook { 
+    0% {
+
+        left: 0%; 
+    }
+
+    50% {
+
+        left: 100%; 
+    }
+
+    100% {
+
+        left: 0%; 
+    }
+}
+@keyframes color {
+        0% {
+        color: black;
+    }
+
+    50% {
+        color: #faeded;
+    }
+
+
+
+}
+
+
+/*  --------image.html CSS end--------- */
+
+
+
+/* Footer buttons */
+.image-rights-pushed a{
+    color: coral;
+}
+
+.about-us-group-header h4 {
+    transition: color 0.2s ease-in-out;
+}
+
+.image-rights h4 u{
+    transition: color 0.2s ease-in-out;
+}
+
+.image-rights-pushed h4 u {
+    transition: color 0.2s ease-in-out
+}
+
+.image-rights h4 u:hover {
+    color: coral; 
+    opacity: 1; 
+}
+.about-us-group-header h4:hover{
+    color: coral; 
+    opacity: 1; 
+}
+.image-rights-pushed h4 u:hover{
+    color:black !important;
+    opacity: 1;
+}
+
+
+/* Footer buttons end*/
+
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+
+.btn-pushed:hover {
+    background: coral;
+    color: var(--white)!important; /* this overrides earlier styles*/
+    opacity: 1;  /* text from black to white*/
+}
+
+.btn-white{
+    background: var(--white);
+    color: var(--black);
+}
+
+.btn-coral{
+    background: coral;
+    color: #fff;
+}
+
+.btn-pushed {
+    background:coral;
+    color:var(--black);
+    transition: color 0.5s ease-in-out;
+}
+
+
+
+/* Text Classes */
+.text-xxl {
+    font-size: 3rem;  /* 1 rem = 16px */
+    line-height:3rem;
+    font-weight: 600;
+    margin: 40px 0 20px;
+    color: var(--white); /* not full white but close to*/
+}
+
+.text-xl {
+    font-size: 2.2rem;  
+    line-height:1.5;
+    font-weight: normal;
+    margin: 40px 0 20px;
+    color: var(--white);
+}
+
+.text-sm {
+    font-size: 1rem;
+    margin-top: 5px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}   
+
+
+
+/* Backgrounds */
+.bg-light {
+    background: var(--white);
+    color: #333;
+}
+.bg-black {
+    background: var(--black);
+    color: #fff;
+}
+
+
+/* hamburger button */
+
+.hamburger-button{
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+
+}
+
+.hamburger-button .hamburger-line {
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin: 6px 0;
+}
+
+/* mobile menu */
+
+
+.mobile-menu{
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 150px;
+    z-index: 100;
+    background-color: var(--white);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+    right: 0;
+
+}
+
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    padding-right: 10px;
+    align-items: center;
+
+}
+
+.mobile-menu ul li{
+    margin: 10px 0;
+}
+
+.mobile-menu ul li a{
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.mobile-menu .btn {
+    font-size: 14px; /* Pienempi teksti */
+    padding: 8px 12px; /* Vähennä sisäistä tilaa */
+}
+.mobile-menu .btn i {
+    font-size: 12px;
+}
+.mobile-menu .btn {
+    width: auto; /* Ei täysi leveys */
+    min-width: 100px; /* Voit säätää */
+}
+
+
+/* Media Queries */
+
+@media (max-width:670px){
+    .navbar .main-menu{
+    display: none;
+   }
+    .navbar .hamburger-button{
+    display: block;
+   }
+
+   .hero .container{
+    background-size: 350px;
+    background-position: bottom;
+    min-height: 565px;
+    }
+
+    /*TEXT */
+
+    .text-xxl {
+        font-size: 2rem;
+    }
+
+    .subheading{
+        font-size: 0.9rem;
+    }
+
+    .subheading2{
+        font-size: 1rem;
+    }
+
+   
+    
+
+
+}
