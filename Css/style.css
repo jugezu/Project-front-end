@@ -485,19 +485,13 @@ margin-bottom: 40px;
 
 /* Media Queries */
 
-@media (max-width:670px){
+@media (max-width:545px){
     .navbar .main-menu{
     display: none;
    }
     .navbar .hamburger-button{
     display: block;
    }
-
-   .hero .container{
-    background-size: 350px;
-    background-position: bottom;
-    min-height: 565px;
-    }
 
     /*TEXT */
 
@@ -512,9 +506,4 @@ margin-bottom: 40px;
     .subheading2{
         font-size: 1rem;
     }
-
-   
-    
-
-
 }

@@ -465,40 +465,6 @@ img{
 /* Media Queries*/
 
 
-@media (max-width:670px){
-     .navbar .main-menu{
-    display: none;
-   }
-    .navbar .hamburger-button{
-    display: block;
-   }
-    
-/* stack grids on smaller screens*/
-    .classical .classical-grid{
-        grid-template-columns: 1fr;
-    }
-
-    .extra-grid{
-        grid-template-columns: 1fr;
-    }
-
-    
-    .text-xxl {
-        font-size: 2rem;
-    }
-
-    .text-ranks-info{
-        font-size: 1.5rem;
-    }
-
-    .classical-card-body-info{
-        font-size: 1rem;
-        margin-bottom: 40px;
-    }
-
-
-}
-
 @media (max-width:545px){
      .navbar .main-menu{
     display: none;
