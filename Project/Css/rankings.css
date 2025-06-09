@@ -306,7 +306,7 @@ img{
 
 
 .fa-bounce{
-    --fa-animation-duration: 1s;
+    --fa-animation-duration: 1.5s;
     --fa-bounce-rebound:none ;
     
 }
