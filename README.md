@@ -19,7 +19,10 @@ The project website lists top 10 chess players in most played formats
 
 ## Learning Dairy
 
-Available at: https://github.com/jugezu/Project-front-end/blob/main/Learning%20dairy.pdf
+pdf available at: https://github.com/jugezu/Project-front-end/blob/main/Learning%20dairy.pdf
+The links in the PDF file may not work properly. The DOCX link below might be a better option for accessing the links.
+
+docx available at: https://lut-my.sharepoint.com/:w:/g/personal/juho_koski_student_lut_fi/Ef6XWoBUPR5KupYXFsWKJiUBBGHBvusVlGmf_FxrXd5u8Q?e=kbZajn 
 
 ## Video of the project
 
