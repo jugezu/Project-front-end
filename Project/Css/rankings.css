@@ -222,6 +222,9 @@ img{
     margin-top: 10px;
     color: var(--black);
 }
+.card a img{
+    cursor: default;
+}
 
 /*margin-left fixes mobile menu bug */
 .footer ul{
@@ -303,7 +306,7 @@ img{
 
 
 .fa-bounce{
-    --fa-animation-duration: 2s;
+    --fa-animation-duration: 1s;
     --fa-bounce-rebound:none ;
     
 }
