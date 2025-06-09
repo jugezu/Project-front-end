@@ -506,4 +506,14 @@ margin-bottom: 40px;
     .subheading2{
         font-size: 1rem;
     }
+
+
+    .about-us-group-body {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        flex:1;
+        max-width: 400px;
+        font-style: italic;
+        font-size:0.8rem ;
+    }
 }

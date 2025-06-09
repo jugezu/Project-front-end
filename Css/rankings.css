@@ -213,9 +213,11 @@ img{
 .about-us-group-header{
     cursor: pointer;
     color: var(--black);
+    
 }
 
 .image-rights{
+    display: flex;
     cursor: pointer;
     margin-top: 10px;
     color: var(--black);
@@ -263,6 +265,7 @@ img{
 .image-rights h4 u,
 .about-us-group-header h4 {
     transition: color 0.2s ease-in-out;
+    
 
 }
 
@@ -409,6 +412,7 @@ img{
     height: 3px;
     background: black;
     margin: 6px 0;
+
 }
 
 /* mobile menu */
@@ -497,4 +501,13 @@ img{
     }
 
 
+
+    .about-us-group-body {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        flex:1;
+        max-width: 400px;
+        font-style: italic;
+        font-size:0.8rem ;
+    }
 }
