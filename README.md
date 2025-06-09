@@ -1,3 +1,5 @@
+**Creator** Juho Koski
+
 **Website links**
 
 Coursework: https://jugezu.github.io/Front-end-web/
