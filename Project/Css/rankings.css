@@ -223,6 +223,7 @@ img{
     color: var(--black);
 }
 
+/*margin-left fixes mobile menu bug */
 .footer ul{
     margin-left: 90px;
 }
@@ -416,8 +417,6 @@ img{
 }
 
 /* mobile menu */
-
-
 .mobile-menu{
     position: fixed;
     top: 0;
@@ -454,20 +453,20 @@ img{
 }
 
 .mobile-menu .btn {
-    font-size: 14px; /* Pienempi teksti */
-    padding: 8px 12px; /* Vähennä sisäistä tilaa */
+    font-size: 14px; 
+    padding: 8px 12px; 
 }
 .mobile-menu .btn i {
     font-size: 12px;
 }
 .mobile-menu .btn {
-    width: auto; /* Ei täysi leveys */
-    min-width: 100px; /* Voit säätää */
+    width: auto; 
+    min-width: 100px;
 }
 
 
 /* Media Queries*/
-
+/* älä kajoo turhaan*/
 
 @media (max-width:545px){
      .navbar .main-menu{
@@ -509,5 +508,9 @@ img{
         max-width: 400px;
         font-style: italic;
         font-size:0.8rem ;
+    }
+
+    .footer ul{
+        margin-left: 20px;
     }
 }
