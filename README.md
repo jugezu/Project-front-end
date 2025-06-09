@@ -1,10 +1,10 @@
-**Website links**
+## Website links**
 
 Coursework: https://jugezu.github.io/Front-end-web/
 
 Project: https://jugezu.github.io/Project-front-end/
 
-**Quick info how to run the project**
+## Quick info how to run the project**
 
 The project website lists top 10 chess players in most played formats
 
@@ -15,6 +15,6 @@ The project website lists top 10 chess players in most played formats
 5. Image Rights: Click the Image Rights button in the footer to view and download images used on the site.
 
 
-** Learning Dairy**
+## Learning Dairy
 
 Available: https://github.com/jugezu/Project-front-end/blob/main/Learning%20dairy.pdf 
