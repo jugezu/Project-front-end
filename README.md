@@ -17,7 +17,7 @@ The project website lists top 10 chess players in most played formats
 4. Easter egg: A jumping crown icon in the Rapid section—click it to see what happens.
 5. Image Rights: Click the Image Rights button in the footer to view and download images used on the site.
 
-## Learning Dairy
+## Learning Diary
 
 pdf available at: https://github.com/jugezu/Project-front-end/blob/main/Learning%20dairy.pdf
 
