@@ -1,4 +1,4 @@
-**Creator** Juho Koski
+Creator: Juho Koski
 
 **Website links**
 
