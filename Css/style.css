@@ -213,15 +213,11 @@ margin-bottom: 40px;
     padding-bottom: 40px;
 }
 
-
-
-
 .download-link a{
     color: #faeded;
     text-decoration: none;
     padding-left: 10px;
 }
-
 
 .download-link a{
     transition: color 0.2s ease-in-out;
@@ -301,12 +297,7 @@ margin-bottom: 40px;
     50% {
         color: #faeded;
     }
-
-
-
 }
-
-
 /*  --------image.html CSS end--------- */
 
 
@@ -471,15 +462,15 @@ margin-bottom: 40px;
 }
 
 .mobile-menu .btn {
-    font-size: 14px; /* Pienempi teksti */
-    padding: 8px 12px; /* Vähennä sisäistä tilaa */
+    font-size: 14px;
+    padding: 8px 12px;
 }
 .mobile-menu .btn i {
     font-size: 12px;
 }
 .mobile-menu .btn {
-    width: auto; /* Ei täysi leveys */
-    min-width: 100px; /* Voit säätää */
+    width: auto; 
+    min-width: 100px;
 }
 
 
@@ -516,4 +507,8 @@ margin-bottom: 40px;
         font-style: italic;
         font-size:0.8rem ;
     }
+
+    .footer ul{
+        margin-left: 20px;
+    }  
 }
